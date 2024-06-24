@@ -1,101 +1,77 @@
-<html>
-    <head>
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-        <title>MateMagicas</title>
-        <link href="css/style.css" rel="stylesheet" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-        <script>
-            window.onload = function(){
-                window.scrollTo(0,0);
-            }
-        </script>
-    </head>
-    <body>
-        <header>
-            <div class="center">
-                <div class="logoUniSales"><img src="img/logoUniSales.png"/></div>
-                <div class="menu">
-                    <a href="#Objetivo">Objetivo</a>
-                    <a href="#QuemSomos">Quem somos</a>
-                    <a href="#Contato">Contato</a>
-                </div>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>MateMagicas</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        window.onload = function() {
+            window.scrollTo(0, 0);
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="center">
+            <div class="logoUniSales"><img src="img/logoUniSales.png" class="img-fluid" alt="Logo UniSales" /></div>
+            <div class="menu">
+                <a href="#Objetivo">Objetivo</a>
+                <a href="#QuemSomos">Quem somos</a>
+                <a href="#Contato">Contato</a>
             </div>
-        </header>
-        <section class="boneco">
-            <div class="extra">
-                <img src="img/BonecoM.png"/>
-                </div>
-            <div class="center2">
-            <div class="texto-sobre"> 
-                <h1>Venha se divertir e aprender!<br/> <span style="color:rgb(182, 63, 226) ;">Matemágica</span> é mais que um jogo</h1>
+        </div>
+    </header> 
+        </div>
+        <style>
+            .container{
+        text-align: center;
+        align-items: center;
+}
+        </style>
+        
+        <div class="container">
+            <img src="img/favicon.ico" class="img-fluid" alt="Imagem centralizada">
+            <div class="texto-sobre">
+                <h1>Venha se divertir e aprender!<br /> <span class="highlight">Matemágica</span> é mais que um jogo</h1>
                 <p>Quer vir se divertir comigo em um jogo de matemágica? Vamos descobrir juntos como os números podem ser mágicos e divertidos!</p>
-                <a href="#Baixar"><button>BAIXAR</button></a>
+                <a href="#Baixar"><button>BAIXAR</button></a>               
             </div>
+        </div>
+    </section>
+    <section class="boneca" id="Objetivo">
+        
+        <div class="container">
+            <div class="texto-objetivo">
+                <h1>Qual o <span class="highlight">Objetivo</span>?</h1>
+                <p>O objetivo deste projeto é desenvolver e implementar um jogo educativo de matemática com uma temática envolvente de magia, que visa proporcionar uma experiência lúdica e estimulante para crianças.</p>
+                <p>Promovendo o aprendizado de conceitos matemáticos de forma interativa e divertida, incentivando o raciocínio lógico, a resolução de problemas e o desenvolvimento de habilidades numéricas essenciais desde os primeiros anos escolares.</p>
+                <img src="img/Contato.png" class="img-fluid" alt="Imgaem centralizada" />
             </div>
-        </section>
-            <section class="boneca">
-                <div class="extra2">
-                    <img src="img/BonecaF.png" alt="img" id="Objetivo"/>
-                </div>
-                <div class="center3">
-                <div class="texto-objetivo">
-                    <ob>Qual o <span style="color:rgb(182, 63, 226) ;"> Objetivo</span>?</ob>
-                    <h1>O objetivo deste projeto é desenvolver e implementar um jogo educativo de matemática com uma temática envolvente de magia, que visa proporcionar uma experiência lúdica e estimulante para crianças.</h1>
-                    <p>Promovendo o aprendizado de conceitos matemáticos de forma interativa e divertida, incentivando o raciocínio lógico, a resolução de problemas e o desenvolvimento de habilidades numéricas essenciais desde os primeiros anos escolares.</p>
-                </div>
-                </div>
-            </section> 
-            <section class="quemsomos">
-                <div class="extra3">
-                    <img src="img/QuemSomos.png" alt="img" id="QuemSomos"/>
-                </div>
-                <div class="center4">
-                    <div class="texto-quemsomos">
-                        <h1>Venha nos <span style="color:rgb(182, 63, 226) ;"> Conhecer</span>!</h1>
-                        <p>Olá! Somos estudantes da Universidade Católica Salesiana e <br/> fazemos parte de um projeto que desenvolveu este jogo incrível.<br/> Estamos muito entusiasmados em compartilhar nosso trabalho <br/>com você e esperamos que goste da experiência que criamos.</p>
-                        <b>Queremos proporcionar diversão e entretenimento, além de <br/> estimular o pensamento crítico e a criatividade. Agradecemos <br/> muito por jogar e por apoiar nossos esforços acadêmicos!</b>
-                    </div>
-                </div>
-            </section>
-            <section class="contato">
-                <div class="extra4">
-                    <img src="img/Contato.png" alt="img" id="Contato"/>
-                </div>
-                <div class="center5">
-                    <div class="texto-contato">
-                        <h1>Informações para <span style="color:rgb(182, 63, 226) ;">Contato</span></h1>
-                        <p> <span style="color:rgb(182, 63, 226) ;">Email: </span>----------</p>
-                        <t><span style="color:rgb(182, 63, 226) ;">Telefone: </span>27 3331-8500(Unisales)</t>
-                        <l><span style="color:rgb(182, 63, 226) ;">Local: </span>Av Vitória, 950, Forte São João - Vitória/ES</l>
-                        <c><span style="color:rgb(182, 63, 226) ;">CEP: </span>29017-950</c>
-                    </div>
-                </div>
-            </section>
-            <section class="baixar">
-                <div class="extra5">
-                    <a href="" target="_blank">
-                        <img src="img/iphone.png" alt="img">
-                    </a>
-                 </div>
-                    <div class="extra6">
-                        <a href="" download>
-                        <img src="img/pc.png" alt="img">
-                        </a>
-                    </div>
-                 <div class="extra7">
-                    <a href="" target="_blank">
-                        <img src="img/sansung.png" alt="img">
-                    </a>
-                 </div>
-                <div class="center6">
-                    <div class="texto-baixar">
-                        <h1 id="Baixar">Escolha sua <span style="color:rgb(182, 63, 226) ;">Plataforma</span></h1>
-                        <p>IOS/Iphone</p>
-                        <o>Computador</o>
-                        <i>Android/Sansung</i>
-                        <v>CLIQUE EM ALGUMA IMAGEM</v>
-                    </div>
-                </div>
-            </section>
-    </body>
+        </div>
+    </section>
+    <section class="quemsomos" id="QuemSomos">
+        
+        <div class="container">
+            <div class="texto-quemsomos">
+                <h1>Venha nos <span class="highlight">Conhecer</span>!</h1>
+                <p>Olá! Somos estudantes da Universidade Católica Salesiana e fazemos parte de um projeto que desenvolveu este jogo incrível. Estamos muito entusiasmados em compartilhar nosso trabalho com você e esperamos que goste da experiência que criamos.</p>
+                <p>Queremos proporcionar diversão e entretenimento, além de estimular o pensamento crítico e a criatividade. Agradecemos muito por jogar e por apoiar nossos esforços acadêmicos!</p>
+            </div>
+        </div>
+    </section>
+    <section class="contato" id="Contato">
+        
+        <div class="container">
+            <div class="texto-contato">
+                <img src="img/BonecoM.png" class="img-fluid" alt="Imagem centralizada" />
+                <h1>Informações para <span class="highlight">Contato</span></h1>
+                <p><span class="highlight">Email:</span> ----------</p>
+                <p><span class="highlight">Telefone:</span> 27 3331-8500 (Unisales)</p>
+                <p><span class="highlight">Local:</span> Av Vitória, 950, Forte São João - Vitória/ES</p>
+                <p><span class="highlight">CEP:</span> 29017-950</p>
+            </div>
+        </div>
+    </section>
+</body>
 </html>

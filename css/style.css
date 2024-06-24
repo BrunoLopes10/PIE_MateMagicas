@@ -1,87 +1,93 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.center{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1280px;
-    margin: 20 auto;
-    padding:0 2%;
-}
-
-html,body{
+body {
     height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
 }
+ 
 
-.header{
+.center {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    margin: 20px auto;
+    padding: 0 2%;
+}
+
+.header {
     height: 200px;
     padding: 20px 0;
 }
 
-.logoUniSales{
+.logoUniSales {
     width: 50%;
 }
 
-.menu{
-    width:50%;
-    margin: 20 auto;
-    text-align: right;
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: transparent;
 }
 
-.menu a{
-    color:black;
+.menu a {
+    color: black;
     text-decoration: none;
-    font-weight: bold;
-    margin-right: 80px;
+    padding: 14px 20px;
+    text-align: center;
 }
 
-section.boneco{
-    height: calc(100% - 20px);
+.menu a:hover {
+    background-color: #ddd; 
+    border-radius: 4px;
+}
+
+
+@media (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .menu a {
+        padding: 10px;
+        width: 100%;
+        text-align: right;
+    }
+}   
+
+section.boneco {
+    height: calc(90% - 20px);
     position: relative;
 }
 
-.extra{
-    position: absolute;
-    bottom: -100px;
-    right: -500px;
-    width: 1200px;
-    height: 1200px;
-    border-radius: 100%;
-    background-color: rgb(182, 63, 226);
-}
 
-.texto-sobre{
+.texto-sobre {
     margin-top: 200px;
+    text-align: center;
+    width: 100%;
 }
 
-.texto-sobre h1{
-    position: absolute;
-    left: 17%;
-    top: 10%;
-    font-size: 40px;
+.texto-sobre h1 {
+    font-size: 30px;
 }
 
-.texto-sobre p{
-    position: absolute;
-    left: 17%;
-    top: 18%;
+.texto-sobre p {
     margin: 20px 0;
     color: black;
     font-size: 20px;
     font-weight: bold;
     max-width: 800px;
+    margin: 20px auto;
 }
 
-.texto-sobre button{
-    position: absolute;
-    left: 17%;
-    top: 26%;
+.texto-sobre button {
     border: 0;
     background-color: rgb(182, 63, 226);
     color: white;
@@ -91,243 +97,112 @@ section.boneco{
     cursor: pointer;
 }
 
-section.boneca{
+
+
+.texto-objetivo {
+    margin-top: 200px;
+    text-align: center;
+    width: 100%;
+}
+
+.texto-objetivo h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.texto-objetivo p {
+    margin: 20px auto;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    max-width: 800px;
+}
+
+section.quemsomos {
     position: relative;
 }
 
-.extra2{
-    position: absolute;
-    bottom: -1000px;
-    right: 1200px;
-    width: 1200px;
-    margin-left: -200px;
-    height: 1200px;
-    border-radius: 100%;
-    background-color: rgb(182, 63, 226);
-}
 
-.extra2 img{
-    position: absolute;
-    right: 50;
-}
-
-.texto-objetivo{
+.texto-quemsomos {
     margin-top: 200px;
+    text-align: center;
+    width: 100%;
 }
 
-.texto-objetivo ob{
-    position: absolute;
-    left: 55%;
-    top: 180;
-    font-weight: bold;
+.texto-quemsomos h1 {
     font-size: 40px;
+    margin-bottom: 20px;
 }
 
-.texto-objetivo h1{
-    position: absolute;
-    left: 37%;
-    top: 250;
-    font-size: 25px;
-}
-
-.texto-objetivo p{
-    position: absolute;
-    left: 37%;
-    top: 350;
-    font-size: 25px;
-    font-weight: bold;
+.texto-quemsomos p {
+    margin: 20px auto;
     color: black;
+    font-size: 20px;
+    font-weight: bold;
+    max-width: 800px;
 }
 
-section.quemsomos{
+section.contato {
     position: relative;
 }
 
-.extra3{
-    position: absolute;
-    bottom: -2100px;
-    right: -500px;
-    width: 1200px;
-    height: 1200px;
-    border-radius: 100%;
-    background-color: rgb(182, 63, 226);
-}
 
-.texto-quemsomos{
+.texto-contato {
     margin-top: 200px;
+    text-align: center;
+    width: 100%;
 }
 
-.texto-quemsomos h1{
-    position: absolute;
-    left: 20%;
-    top: 1330;
+.texto-contato h1 {
     font-size: 40px;
-    font-weight: bold;
-    color: black;
+    margin-bottom: 20px;
 }
 
-.texto-quemsomos p{
-    position: absolute;
-    left: 10%;
-    top: 1400;
-    font-size: 25px;
-    font-weight: bold;
+.texto-contato p {
+    margin: 20px auto;
     color: black;
+    font-size: 20px;
+    font-weight: bold;
+    max-width: 800px;
 }
 
-.texto-quemsomos b{
-    position: absolute;
-    left: 10%;
-    top: 1525;
-    font-size: 25px;
-    font-weight: bold;
-    color: black;
-}
-
-section.contato{
+section.baixar {
     position: relative;
 }
 
-.extra4{
-    position: absolute;
-    bottom: -3200px;
-    right: 1200px;
-    width: 1200px;
-    margin-left: -200px;
-    height: 1200px;
-    border-radius: 100%;
-    background-color: rgb(182, 63, 226);
-}
 
-.extra4 img{
-    position: absolute;
-    right: 50;
-}
 
-.texto-contato{
+.texto-baixar {
     margin-top: 200px;
+    text-align: center;
+    width: 100%;
 }
 
-.texto-contato h1{
-    position: absolute;
-    left: 37%;
-    top: 2380;
-    font-weight: bold;
+.texto-baixar h1 {
     font-size: 40px;
+    margin-bottom: 20px;
 }
 
-.texto-contato p{
-    position: absolute;
-    left: 37%;
-    top: 2450;
+.texto-baixar p {
+    margin: 20px auto;
+    color: black;
+    font-size: 20px;
     font-weight: bold;
-    font-size: 25px;
+    max-width: 800px;
 }
 
-.texto-contato t{
-    position: absolute;
-    left: 37%;
-    top: 2500;
-    font-weight: bold;
-    font-size: 25px;
-}
+@media screen and (max-width: 768px) {
+    
+    .container{
+        text-align: center;
+    }
+    
+    .centralizada{
+        display: block;
+        margin: auto;
+        
 
-.texto-contato l{
-    position: absolute;
-    left: 37%;
-    top: 2550;
-    font-weight: bolder;
-    font-size: 25px;
-}
-
-.texto-contato c{
-    position: absolute;
-    left: 37%;
-    top: 2600;
-    font-weight: bold;
-    font-size: 25px;
-}
-
-section.baixar{
-    position: relative;
-}
-
-.extra5{
-    position: absolute;
-    bottom: -4300px;
-    right: 305px;
-    width: 1250px;
-    margin-left: -200px;
-    height: 600px;
-    border-radius: 25%;
-    background-color: rgb(182, 63, 226);
-}
-
-.extra5 img{
-    position: absolute;
-    top: 200;
-    left: 10%;
-    width: 100px;
-    height: auto;
-}
-
-
-.extra6 img{
-    position: absolute;
-    top: 3925px;
-    left: 47%;
-    width: 100px;
-    height: auto;
-}
-
-.extra7 img{
-    position: absolute;
-    top: 3910px;
-    left: 69%;
-    width: 100px;
-    height: auto;
-}
-
-.texto-baixar{
-    margin-top: 200px;
-}
-
-.texto-baixar h1{
-    position: absolute;
-    left: 37%;
-    top: 3650;
-    font-weight: bold;
-    font-size: 40px;
-}
-
-.texto-baixar p{
-    position: absolute;
-    top: 4025;
-    left: 20.5%;
-    font-weight: bold;
-    font-size: 25px;
-}
-
-.texto-baixar o{
-    position: absolute;
-    top: 4025;
-    left: 45%;
-    font-weight: bold;
-    font-size: 25px;
-}
-
-.texto-baixar i{
-    position: absolute;
-    top: 4025;
-    left: 65%;
-    font-weight: bold;
-    font-size: 25px;
-}
-
-.texto-baixar v{
-    position: absolute;
-    top: 4200;
-    left: 35%;
-    font-weight: bold;
-    font-size: 35px;
+    }
+  
+  
 }
